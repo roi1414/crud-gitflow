@@ -46,3 +46,6 @@ app.delete('/users/:id', (req, res) => {
 app.listen(3000, () => {
   console.log("Servidor corriendo en http://localhost:3000");
 });
+if (!req.body.name) {
+  return res.status(400).send("Nombre requerido");
+}
