@@ -46,6 +46,23 @@ app.delete('/users/:id', (req, res) => {
 app.listen(3000, () => {
   console.log("Servidor corriendo en http://localhost:3000");
 });
+feature/payment-api-integration
 app.post('/payment', (req, res) => {
   res.send("Pago procesado");
 });
+
+ feature/validate-user-input
+if (!req.body.name) {
+  return res.status(400).send("Nombre requerido");
+}
+
+ feature/user-dashboard
+app.get('/dashboard', (req, res) => {
+  res.send("Dashboard del usuario");
+
+app.post('/login', (req, res) => {
+  res.send("Login exitoso");
+ develop
+});
+develop
+develop
