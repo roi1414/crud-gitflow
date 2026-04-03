@@ -46,6 +46,14 @@ app.delete('/users/:id', (req, res) => {
 app.listen(3000, () => {
   console.log("Servidor corriendo en http://localhost:3000");
 });
+hotfix/fix-date-format
+
+app.post('/login', (req, res) => {
+  res.send("Login exitoso");
+});
+const currentDate = new Date().toISOString();
+console.log(currentDate);
+
 feature/payment-api-integration
 app.post('/payment', (req, res) => {
   res.send("Pago procesado");
@@ -66,3 +74,4 @@ app.post('/login', (req, res) => {
 });
 develop
 develop
+ develop
