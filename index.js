@@ -50,3 +50,5 @@ app.listen(3000, () => {
 app.post('/login', (req, res) => {
   res.send("Login exitoso");
 });
+const currentDate = new Date().toISOString();
+console.log(currentDate);
